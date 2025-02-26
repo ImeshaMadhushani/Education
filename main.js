@@ -1,7 +1,7 @@
 //change nav bar styles on scroll
 
 window.addEventListener('scroll', ()=> {
-    document.querySelector('nav').classList.toggle('window-scroll',window.scrollY>0)
+    document.querySelector('nav').classList.toggle('window-scroll',window.scrollY> 0)
 });
 
 
@@ -16,10 +16,10 @@ faqs.forEach(faq => {
 
         //change icon
         const icon = faq.querySelector('.faq_icon i');
-        if(icon.className === 'uil uil-plus'){
-            icon.className = "uil uil-minus"
+        if (icon.className === 'fa-solid fa-plus'){
+            icon.className = "fa-solid fa-minus"
         }else{
-            icon.className = "uil uil-plus";
+            icon.className = "fa-solid fa-plus";
         }
     })
 })
